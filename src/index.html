@@ -17,20 +17,18 @@
             <div class="log w-37.5"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
             <nav>
                 <button id="main-button" class="text-blue-500 flex border-2 border-blue-500 p-3 md:hidden"> 
-           
-           
                     <i class="fa-solid fa-bars " style="color: #2a66c1;"></i>
                    </button>
-                <ul id="main-menu" class="absolute text-blue-500 w-full left-0  p-4 text-left hidden md:block md:flex md:relative md:justify-evenly md:items-center">
+                <ul id="main-menu" class="absolute text-blue-500 w-full left-0  p-4 text-left hidden md:block md:flex md:relative md:justify-evenly md:items-center z-10">
                    <li class=" mx-4 hover:text-gray-500"><a class="font-sans" href="#">Home</a></li>
                    <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">Shop</a></li>
                    <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">  
-                    <select class="bg-white  " name="cars" id="cars ">
+                    <select class="bg-white font-sans" name="cars" id="cars ">
                       <option value="MyAccount" class=" " >MY ACCOUNT</option>
                       <option value="saab">ORDERS</option>
                       <option value="opel">ACCOUNT DETAILS</option>
                       <option class="" value="audi">ADDRESS</option>
-                    </select class="font-sans" ></a></li>
+                    </select  ></a></li>
                    <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">About</a></li>
                    <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">Contract</a></li>
                   
@@ -52,17 +50,14 @@
         
 
     </header>
-    <main>
-        <div class="hero h-90  " style="background-image: url(imgs/hero-cover.jpg);">
-         
-            <div class="hero-content text-center text-neutral-content   my-0">
-              <div class="max-w-md">
-                <h1 class="mb-5 text-7xl md:text-9xl font-extrabold font-serif  subpixel-antialiased drop-shadow-md  text-white mt-40 ">AirProX3</h1>
-                <img class=" " src="imgs/hero-img.png" alt="shows">
-                <button class="btn bg-white  rounded-3xl border-none drop-shadow-md mb-40 font-serif"><i class="fa-solid fa-arrow-right-long"></i> Shop collection</button>
-              </div>
+    <main class="flex justify-center items-center bg-white">
+        <div class="flex justify-center items-center">
+            <div class="hero-contant relative bg-no-repeat bg-center bg-cover bg-origin-content " style="background-image: url(imgs/hero-cover.jpg) ;">
+                <h1 class=" font-serif text-5xl sm:text-7xl font-extrabold text-center absolute text text-white mt-20 sm:mt-48  ml-24 sm:ml-48  drop-shadow-2xl shadow-blue-500/50 " > AirProX3</h1>
+                <img src="imgs/hero-img.png" alt="">
+                <button  class=" btn shadow-2xl shadow-blue-500/50 text-center font-serif text-slate-600 hover:bg-slate-600 hover:text-white absolute bottom-10 left-40 sm:bottom-20 sm:left-80 rounded-full bg-white border-none"><i class="fa-solid fa-arrow-right"></i> Shop collection</button>
             </div>
-          </div>
+        </div>
 
     </main>
     <footer>
