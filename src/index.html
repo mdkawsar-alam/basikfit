@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--fontawsome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--deisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-white flex   ">
+        <div class="container  p-5 flex relative justify-between items-center mx-auto "> 
+            <div class="log w-37.5"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
+            <nav>
+                <button id="main-button" class="text-blue-500 flex border-2 border-blue-500 p-3 md:hidden"> 
+           
+           
+                    <i class="fa-solid fa-bars " style="color: #2a66c1;"></i>
+                   </button>
+                <ul id="main-menu" class="absolute text-blue-500 w-full left-0  p-4 text-left hidden md:block md:flex md:relative md:justify-evenly md:items-center">
+                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans" href="#">Home</a></li>
+                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">Shop</a></li>
+                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">  
+                    <select class="bg-white  " name="cars" id="cars ">
+                      <option value="MyAccount" class=" " >MY ACCOUNT</option>
+                      <option value="saab">ORDERS</option>
+                      <option value="opel">ACCOUNT DETAILS</option>
+                      <option class="" value="audi">ADDRESS</option>
+                    </select class="font-sans" ></a></li>
+                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">About</a></li>
+                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">Contract</a></li>
+                  
+                </ul>
+            </nav>
+            <div class="hidden sm:flex">
+                <a class="flex  items-center " href="#">
+                    <p class="text-blue-500 text-xl mr-2 font-sans ">$0.00</p>
+                     <span class="flex">
+                        <i class="fa-solid fa-bag-shopping " style="color: #2760c4; font-size: 25px;">
+                        </i>
+                        <div class="w-4 h-4 bg-blue-500 relative top-0 rounded-full  text-center">
+                        <p class="text-black text-xs">0</p>
+                    </div> 
+                </span>
+            </a>
+            </div>
+        </div>
+        
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
