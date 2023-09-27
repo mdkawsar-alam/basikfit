@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<!--fontawsome cdn-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--deisyUI cdn-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <header class="bg-white flex   ">
-        <div class="container  p-5 flex relative justify-between items-center mx-auto "> 
+    <header class="bg-white relative md:items-center  ">
+        <div class="container  p-5 flex  justify-between   ">
             <div class="log w-37.5"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
-            <nav>
-                <button id="main-button" class="text-blue-500 flex border-2 border-blue-500 p-3 md:hidden"> 
+            <nav class="" >
+                <button id="main-button" class=" md:hidden text-blue-500 flex border-2 border-blue-500 p-3 ">
                     <i class="fa-solid fa-bars " style="color: #2a66c1;"></i>
-                   </button>
-                <ul id="main-menu" class="absolute text-blue-500 w-full left-0  p-4 text-left hidden md:block md:flex md:relative md:justify-evenly md:items-center z-10">
-                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans" href="#">Home</a></li>
-                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">Shop</a></li>
-                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">  
-                    <select class="bg-white font-sans" name="cars" id="cars ">
-                      <option value="MyAccount" class=" " >MY ACCOUNT</option>
-                      <option value="saab">ORDERS</option>
-                      <option value="opel">ACCOUNT DETAILS</option>
-                      <option class="" value="audi">ADDRESS</option>
-                    </select  ></a></li>
-                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">About</a></li>
-                   <li class=" mx-4 hover:text-gray-500"><a class="font-sans"  href="#">Contract</a></li>
-                  
-                </ul>
-            </nav>
-            <div class="hidden sm:flex">
-                <a class="flex  items-center " href="#">
-                    <p class="text-blue-500 text-xl mr-2 font-sans ">$0.00</p>
-                     <span class="flex">
-                        <i class="fa-solid fa-bag-shopping " style="color: #2760c4; font-size: 25px;">
-                        </i>
-                        <div class="w-4 h-4 bg-blue-500 relative top-0 rounded-full  text-center">
+                </button>
+
+                <div id="main-menu" 
+                     class="nav-conatainer  absolute  md:relative block left-0  bg-slate-300 w-full md:bg-white z-10  p-5 md:p-0 font-serif text-blue-500 hidden sm:flex ">
+                    <div class="nav-menu m-3 "><a class="hover:text-gray-600" href="#">HOME</a></div>
+                    <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">SHOP</a></div>
+                    <div class="nav-menu group  relative"><a class="hover:text-gray-600" href="#">My ACOUNT   </a>
+                        <button class="btn hover:bg-white  bg-slate-300 md:bg-white border-none rounded-full "><i class="fa-solid fa-angle-down"></i></button>
+                        <span>
+                            <div class="sub-menu-container hidden group-hover:block md:absolute  w-40 shadow-md ">
+                                <div class="sub-menu m-3"><a class="hover:text-gray-600" href="#">ORDERS</a></div>
+                                <hr>
+                                <div class="sub-menu m-3"><a class="hover:text-gray-600" href="#">ADDRESS</a></div>
+                                <hr>
+                                <div class="sub-menu m-3"><a class="hover:text-gray-600" href="#">ACOUNT DETAILS</a></div>
+
+                            </div>
+                         </span>
+                    </div>
+                    <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">CONTRACT</a></div>
+                    <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">ABOUT</a></div>
+                    
+                </div>
+               
+    </nav>
+        
+        <div class="hidden sm:flex">
+            <a class="flex  " href="#">
+                <p class="text-blue-500 text-xl mr-2 font-sans ">$0.00</p>
+                <span class="flex">
+                    <i class="fa-solid fa-bag-shopping " style="color: #2760c4; font-size: 25px;">
+                    </i>
+                    <div class="w-4 h-4 bg-blue-500 relative top-0 rounded-full  text-center">
                         <p class="text-black text-xs">0</p>
-                    </div> 
+                    </div>
                 </span>
             </a>
-            </div>
         </div>
-        
+        </div>
+
 
     </header>
     <main class="flex justify-center items-center bg-white">
         <div class="flex justify-center items-center">
-            <div class="hero-contant relative bg-no-repeat bg-center bg-cover bg-origin-content " style="background-image: url(imgs/hero-cover.jpg) ;">
-                <h1 class=" font-serif text-5xl sm:text-7xl font-extrabold text-center absolute text text-white mt-20 sm:mt-48  ml-24 sm:ml-48  drop-shadow-2xl shadow-blue-500/50 " > AirProX3</h1>
+            <div class="hero-contant relative bg-no-repeat bg-center bg-cover bg-origin-content "
+                style="background-image: url(imgs/hero-cover.jpg) ;">
+                <h1
+                    class=" font-serif text-5xl sm:text-7xl font-extrabold text-center absolute text text-white mt-20 sm:mt-48  ml-24 sm:ml-48  drop-shadow-2xl shadow-blue-500/50 ">
+                    AirProX3</h1>
                 <img src="imgs/hero-img.png" alt="">
-                <button  class=" btn shadow-2xl shadow-blue-500/50 text-center font-serif text-slate-600 hover:bg-slate-600 hover:text-white absolute bottom-10 left-40 sm:bottom-20 sm:left-80 rounded-full bg-white border-none"><i class="fa-solid fa-arrow-right"></i> Shop collection</button>
+                <button
+                    class=" btn shadow-2xl shadow-blue-500/50 text-center font-serif text-slate-600 hover:bg-slate-600 hover:text-white absolute bottom-10 left-40 sm:bottom-20 sm:left-80 rounded-full bg-white border-none"><i
+                        class="fa-solid fa-arrow-right"></i> Shop collection</button>
             </div>
         </div>
 
@@ -65,4 +84,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
