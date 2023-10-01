@@ -612,6 +612,11 @@ video {
   margin: 1.25rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-60 {
   margin-bottom: 15rem;
 }
@@ -622,6 +627,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -682,6 +691,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .-translate-y-1\/2 {
@@ -775,18 +788,52 @@ video {
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
-.bg-slate-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-amber-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(146 64 14 / var(--tw-bg-opacity));
+}
+
+.bg-orange-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 45 18 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/src\/imgs\/bg-img01\.jpg\'\)\] {
+  background-image: url('../src/imgs/bg-img01.jpg');
+}
+
+.bg-\[url\(\'imgs\/bg-img01\.jpg\'\)\] {
+  background-image: url('imgs/bg-img01.jpg');
+}
+
+.bg-\[url\(\'imgs\\bg-img01\.jpg\'\)\] {
+  background-image: url('imgs\bg-img01.jpg');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'imgs\/bg-img02\.jpeg\'\)\] {
+  background-image: url('imgs/bg-img02.jpeg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
 }
 
 .bg-center {
@@ -795,6 +842,10 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.bg-origin-border {
+  background-origin: border-box;
 }
 
 .bg-origin-content {
@@ -922,6 +973,11 @@ video {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -933,10 +989,6 @@ video {
 
 .opacity-30 {
   opacity: 0.3;
-}
-
-.opacity-40 {
-  opacity: 0.4;
 }
 
 .shadow-2xl {
@@ -1007,6 +1059,10 @@ video {
 
   .sm\:h-80 {
     height: 20rem;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:grid-cols-3 {
