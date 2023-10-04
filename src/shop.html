@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+     <!--google fonts cdn-->
+     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400;500&family=Dancing+Script:wght@500&family=Gloock&family=Lobster&family=Shrikhand&family=Yeseva+One&display=swap" rel="stylesheet">
+
+
+    <!--fontawsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--deisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f2f4f6]">
+    <header class="  bg-white  flex justify-center items-center relative   ">
+            <div class="container  p-5 flex  justify-between items-center mx-0 my-auto ">
+                <div class="log w-37.5"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
+                <nav class="" >
+                    <button id="main-button" class=" md:hidden text-blue-500 flex border-2 border-blue-500 p-3 ">
+                        <i class="fa-solid fa-bars " style="color: #2a66c1;"></i>
+                    </button>
+
+                    <div id="main-menu" 
+                     class="nav-conatainer  absolute  md:relative  left-0  bg-slate-300 w-full md:bg-white z-10  p-5 md:p-0 font-serif text-blue-500 hidden sm:flex ">
+                        <div class="nav-menu m-3 "><a class="hover:text-gray-600" href="#">HOME</a></div>
+                        <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">SHOP</a></div>
+                        <div class="nav-menu group  relative"><a class="hover:text-gray-600" href="#">My ACOUNT   </a>
+                        <button class="btn hover:bg-white   md:bg-white border-none rounded-full "><i class="fa-solid fa-angle-down"></i></button>
+                            <span>
+                                <div class="sub-menu-container hidden group-hover:block md:absolute  w-40 shadow-md ">
+                                    <div class="sub-menu m-3"><a class="hover:text-gray-600" href="#"><i class="fa-solid fa-chevron-right md:hidden"></i> ORDERS</a></div>
+                                    <hr>
+                                    <div class="sub-menu m-3"><a class="hover:text-gray-600" href="#"><i class="fa-solid fa-chevron-right md:hidden"></i> ADDRESS</a></div>
+                                    <hr>
+                                    <div class="sub-menu m-3"><a class="hover:text-gray-600" href="#"> <i class="fa-solid fa-chevron-right md:hidden"></i>ACOUNT DETAILS</a></div>
+
+                                </div>
+                            </span>
+                        </div>
+                        <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">CONTRACT</a></div>
+                        <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">ABOUT</a></div>                                                
+                    
+                    </div>
+               
+                </nav>
+        
+                <div class="hidden sm:flex relative p-4">
+                <a class="flex  " href="#">
+                <p class="text-blue-400 text-xl mr-2 font-sans ">$0.00</p>
+                <span class="flex ">
+                    <i class="fa-solid fa-bag-shopping " style="color: #709ae3; font-size: 25px;">
+                    </i>
+                    <div class="w-4 h-4 bg-blue-400  top-3 right-0 rounded-full  text-center absolute">
+                        <p class="text-black text-xs">0</p>
+                    </div>
+                </span>
+                </a>
+                </div>
+            </div>
+
+
+    </header>
+    <script src="script.js"> </script>
+</body>
+</html>
