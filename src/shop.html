@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#f2f4f6]">
+<body >
     <header class="  bg-white  flex justify-center items-center relative   ">
             <div class="container  p-5 flex  justify-between items-center mx-0 my-auto ">
                 <div class="log w-37.5"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
@@ -30,7 +30,7 @@
                      class="nav-conatainer  absolute  md:relative  left-0  bg-slate-300 w-full md:bg-white z-10  p-5 md:p-0 font-serif text-blue-500 hidden sm:flex ">
                         <div class="nav-menu m-3 "><a class="hover:text-gray-600" href="#">HOME</a></div>
                         <div class="nav-menu m-3"><a class="hover:text-gray-600" href="#">SHOP</a></div>
-                        <div class="nav-menu group  relative flex justify-between"><a class="hover:text-gray-600" href="#">My ACOUNT   </a>
+                        <div class="nav-menu group  relative "><a class="hover:text-gray-600" href="#">My ACOUNT   </a>
                         <button class="btn hover:bg-white   md:bg-white border-none rounded-full "><i class="fa-solid fa-angle-down"></i></button>
                             <span class="">
                                 <div class="sub-menu-container bg-white hidden group-hover:block md:absolute  w-40 shadow-md ">
@@ -66,6 +66,308 @@
 
 
     </header>
+    <!---header section end-->
+    <!--- main section start-->
+    <main class="bg-[#f2f4f6] flex flex-col justify-center items-center ">
+        <div class=" container  flex justify-between items-center  ">
+            <div>
+                <button class=" bg-[#efefef] hover:bg-[#3a3a3a] text-[#3a3a3a] hover:text-white rounded-3xl p-1 px-5 transition-all border-none text-center flex gap-2">
+                    <span class=""><i class="fa-solid fa-sliders"></i></span>
+                    <span class="">FILTER</span>
+                </button>
+            </div>
+
+            <div  class="flex">
+                <div class="">
+                    <form action="">
+                        <select name="select" id="" class=" bg-[#f2f4f6] outline-none p-2 text-ellipsis w-full max-[250px]">
+                            <option value="">Default sorting</option>
+                            <option value="">Sort by popularity</option>
+                            <option value="">Sort by average rating</option>
+                            <option value="">Sort by latest</option> 
+                             <option value="">Sort by price high to low</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="flex gap-2 items-center mr-5">
+                    <span class="m-2 text-blue-400"><i class="fa-solid fa-border-all"></i></span>
+                    <span class="text-[#3a3a3a]"><i class="fa-solid fa-list"></i></span>
+                    
+                    
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--card section  start here-->
+        <div class="card-container  container    grid-cols-2 grid sm:grid-cols-4">
+            <div class="card w-[300px]  ">
+               
+                <div class="card-body  relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                    <div class="block sm:flex justify-center text-[#3a3a3a] mt-3">
+                        <div class="bg-white m-2 px-3 shadow-md text-[12px]"><p>Black</p></div>
+                        <div  class="bg-white m-2 px-3 shadow-md text-[12px]" ><p>White</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card w-[300px] ">
+               
+                <div class="card-body relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden"><img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                    
+                </div>
+            </div> <div class="card w-[300px]">
+               
+                <div class="card-body  relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                   
+                </div>
+            </div> <div class="card w-[300px]">
+               
+                <div class="card-body   relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden"> 
+                <img class="transition-all ease-in-out hover:scale-110 duration-300 " src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                </div>
+            </div> <div class="card w-[300px]">
+                
+                <div class="card-body  relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                    
+                </div>
+            </div> <div class="card w-[300px] ">
+               
+                <div class="card-body  relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                    
+                </div>
+            </div> <div class="card w-[300px]">
+               
+                <div class="card-body   relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                
+                </div>
+            </div> <div class="card w-[300px]">
+               
+                <div class="card-body   relative group">
+                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
+                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                    </div>
+               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                </div>
+            
+        </div>
+
+    
+    </main>
+   
     <script src="script.js"> </script>
 </body>
 </html>
