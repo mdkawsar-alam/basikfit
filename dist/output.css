@@ -991,6 +991,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1005,6 +1015,10 @@ video {
 
 .pt-60 {
   padding-top: 15rem;
+}
+
+.pb-\[15px\] {
+  padding-bottom: 15px;
 }
 
 .text-left {
