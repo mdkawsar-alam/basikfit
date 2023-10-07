@@ -18,7 +18,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body >
-    <header class="  bg-white  flex justify-center items-center relative   ">
+    <header class="  bg-white  flex justify-center items-center relative px-2  ">
             <div class="container  py-[15px] pb-[15px] flex  justify-between items-center mx-0 my-auto ">
                 <div class="log w-37.5"><a href="#"><img src="imgs/logo.png" alt=""></a></div>
                 <nav class="" >
@@ -69,7 +69,7 @@
     <!---header section end-->
     <!--- main section start-->
     <main class="bg-[#f2f4f6] flex flex-col justify-center items-center ">
-        <div class=" container  flex justify-between items-center mt-10 ">
+        <div class=" container  flex justify-between items-center mt-10 bg-white sm:bg-[#f2f4f6] fixed bottom-0  z-20 px-10 sm:p-0 sm:relative ">
             <div>
                 <button class=" bg-[#efefef] hover:bg-[#3a3a3a] text-[#3a3a3a] hover:text-white rounded-3xl p-1 px-5 transition-all border-none text-center flex gap-2">
                     <span class=""><i class="fa-solid fa-sliders"></i></span>
@@ -77,7 +77,7 @@
                 </button>
             </div>
 
-            <div  class="flex">
+            <div  class="flex m-4">
                 <div class="">
                     <form action="">
                         <select name="select" id="" class=" bg-[#f2f4f6] outline-none p-2 text-ellipsis w-full max-[250px]">
@@ -98,15 +98,17 @@
         </div>
 
         <!--card section  start here-->
-            <div class="card-container justify-center  grid-cols-2 grid sm:grid-cols-4">
-            <div class="card w-[300px]  ">
-               
-                <div class="card-body  relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+        <div class="card-container  grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 bp-20">
+           
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
                     </div>
-               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
                 </div>
                 <div class="card-des text-center">
                     <p>Running Shoes</p>
@@ -135,47 +137,19 @@
                     </div>
                 </div>
             </div>
+            
+            
 
-            <div class="card w-[300px] ">
-               
-                <div class="card-body relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                   
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
                     </div>
-               <div class="overflow-hidden"><img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
-                </div>
-                <div class="card-des text-center">
-                    <p>Running Shoes</p>
-                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
-                    <div class="rating text-[#3a3a3a]">
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" checked />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                    </div>
-                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
-                    <div class="flex gap-2 text-[#3a3a3a] justify-center pb-3" >
-                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
-                     
-                    </div>
-                    
-                    
-
-                    
-                </div>
-            </div> 
-            <div class="card w-[300px]">
-                <div class="card-body  relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
-                    </div>
-               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
                 </div>
                 <div class="card-des text-center">
                     <p>Running Shoes</p>
@@ -198,12 +172,50 @@
                     
                     
 
+                    <div class="block sm:flex justify-center text-[#3a3a3a] mt-3">
+                        <div class="bg-white m-2 px-3 shadow-md text-[12px]"><p>Black</p></div>
+                        <div  class="bg-white m-2 px-3 shadow-md text-[12px]" ><p>White</p></div>
+                    </div>
+                </div>
+            </div>
                    
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
+                    </div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                    
                 </div>
             </div> 
-            <div class="card w-[300px]">
+            <div class="card w-[100%] sm:w-[200] md:w-[]">
                
-                <div class="card-body   relative group">
+                <div class="card-body   relative group p-3">
                     <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
                         <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
                         <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
@@ -234,14 +246,16 @@
 
                 </div>
             </div> 
-            <div class="card w-[300px]">
-                
-                <div class="card-body  relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                  
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
                     </div>
-               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
                 </div>
                 <div class="card-des text-center">
                     <p>Running Shoes</p>
@@ -264,17 +278,19 @@
                     
                     
 
-                    
+                   
                 </div>
             </div> 
-            <div class="card w-[300px] ">
-               
-                <div class="card-body  relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
+                   
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
                     </div>
-               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
                 </div>
                 <div class="card-des text-center">
                     <p>Running Shoes</p>
@@ -299,74 +315,77 @@
 
                     
                 </div>
-            </div> 
-            <div class="card w-[300px]">
-               
-                <div class="card-body   relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
-                    </div>
-               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
-                </div>
-                <div class="card-des text-center">
-                    <p>Running Shoes</p>
-                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
-                    <div class="rating text-[#3a3a3a]">
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" checked />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                    </div>
-                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
-                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
-                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
-                     
-                    </div>
-                    
-                    
-
-                
-                </div>
-            </div> 
-            <div class="card w-[300px]">
-               
-                <div class="card-body   relative group">
-                    <div class="icons  absolute right-8 hidden transition-all top-8 group-hover:block box-border">
-                        <i class="fa-solid fa-bag-shopping bg-white  p-2 rounded-full m-2"></i><br>
-                        <i class="fa-solid fa-eye  bg-white  p-2 rounded-full  m-2"></i>
-                    </div>
-               <div class="overflow-hidden">     <img class="transition-all ease-in-out hover:scale-110 duration-300" src="imgs/01.jpg" alt="Shoes"></div>
-                </div>
-                <div class="card-des text-center">
-                    <p>Running Shoes</p>
-                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
-                    <div class="rating text-[#3a3a3a]">
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" checked />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                        <input type="radio" name="rating-1" class="mask mask-star" />
-                    </div>
-                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
-                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
-                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
-                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
-                     
-                    </div>
-                    
-                    
-
-                </div>
-            
             </div>
+                   
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
+                    </div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
 
+                </div>
+            </div>
+            <div class="card-body relative group p-3">
+                <div class="overflow-hidden relative">
+                    <!-- Product image -->
+                    <img class="transition-all ease-in-out hover:scale-110 duration-300 w-full" src="imgs/01.jpg" alt="Shoes">
+                    <div class="icons absolute top-0 right-0 opacity-0 transition-opacity group-hover:opacity-100">
+                        <!-- Icons for shopping bag and eye -->
+                        <i class="fa-solid fa-bag-shopping bg-white p-2 rounded-full m-2"></i><br>
+                        <i class="fa-solid fa-eye bg-white p-2 rounded-full m-2"></i>
+                    </div>
+                </div>
+                <div class="card-des text-center">
+                    <p>Running Shoes</p>
+                    <h4 class="text-[#3a3a3a]">Air Pro X3 Aqua</h4>
+                    <div class="rating text-[#3a3a3a]">
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" checked />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                        <input type="radio" name="rating-1" class="mask mask-star" />
+                    </div>
+                      <p class="text-[#3a3a3a]"><span class="line-through text-[#babec7]">$58.00</span  > $55.00</p>
+                    <div class="flex   gap-2 text-[#3a3a3a] justify-center pb-3" >
+                        <div class="w-6 border border-white text-[12px] pr-1 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out  shadow-sm  ">10</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700  ease-in-out shadow-sm   ">7</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">8</div> 
+                        <div class="w-6 border border-white text-[12px] px-2 bg-white text-center hover:border hover:border-slate-800 transition duration-700 ease-in-out shadow-sm ">9</div> 
+                     
+                    </div>
+                    
+                    
+
+                   
+                </div>
+            </div>
+               
+        </div>
         </div>
          
     </main>
@@ -375,7 +394,7 @@
 
 
   
-    <footer class="footer p-10 bg-base-300 text-base-content bg-white text-[#3a3a3a]">
+    <footer class="footer p-10 bg-base-300 text-base-content bg-white text-[#3a3a3a] ">
     <nav>
       <header class="footer-title text-[#000000]">Categories</header> 
       <a class=" hover:text-blue-500">Running Shoes</a> 
